@@ -1,0 +1,130 @@
+* {
+  color: #fffcef;
+  font-family: 'Teko', sans-serif;
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  height: 100px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 25px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: overline underline;
+  color: #98b796;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "picture main main" "project project project" "footer footer footer";
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
+#avely {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: picture;
+  border-radius: 50%;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  margin: 10px;
+  margin-bottom: 60px;
+}
+
+span {
+  color: #98b796;
+}
+
+article {
+  font-size: 2rem;
+}
+
+section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: project;
+}
+
+section h1 {
+  font-size: 2rem;
+  color: #98b796;
+}
+
+section .projects {
+  max-width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@-webkit-keyframes blurry {
+  0% {
+    background-color: #98b7965b;
+  }
+  50% {
+    background-color: #98b7967e;
+  }
+  100% {
+    background-color: #98b796a8;
+  }
+}
+
+@keyframes blurry {
+  0% {
+    background-color: #98b7965b;
+  }
+  50% {
+    background-color: #98b7967e;
+  }
+  100% {
+    background-color: #98b796a8;
+  }
+}
+
+.work:hover {
+  -webkit-animation-name: blurry;
+          animation-name: blurry;
+}
+/*# sourceMappingURL=index.css.map */
