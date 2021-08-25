@@ -55,6 +55,37 @@ body #avely img {
   border-radius: 50%;
 }
 
+@media (max-width: 1050px) {
+  body {
+        grid-template-areas: "header header header" "picture picture picture" "main main main" "project project project" "footer footer footer";
+  }
+  body img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+        grid-template-areas: "header header header" "picture picture picture" "main main main" "project project project" "footer footer footer";
+  }
+  body img {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+  }
+  body nav {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  body nav a {
+    margin: 5px;
+  }
+  body main article {
+    font-size: 1.5rem;
+  }
+}
+
 footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -137,12 +168,21 @@ section div {
 }
 
 section div a {
-  width: 250px height;
+  z-index: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
 }
 
 section div a:hover {
   -webkit-animation-name: blurry;
           animation-name: blurry;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+section div a img {
+  width: 350px;
+  height: 350px;
 }
 
 @-webkit-keyframes blurry {
@@ -167,10 +207,5 @@ section div a:hover {
   100% {
     background-color: #98b796a8;
   }
-}
-
-.work:hover {
-  -webkit-animation-name: blurry;
-          animation-name: blurry;
 }
 /*# sourceMappingURL=index.css.map */
