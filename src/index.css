@@ -22,6 +22,7 @@ nav {
   height: 100px;
   margin-bottom: 50px;
   font-weight: 700;
+  border-bottom: 1px white;
 }
 
 nav a {
@@ -44,6 +45,16 @@ body {
   background-color: black;
 }
 
+body #avely {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: picture;
+}
+
+body #avely img {
+  border-radius: 50%;
+}
+
 footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -57,21 +68,23 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-right: 30px;
-  width: 40%;
 }
 
-#image {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: picture;
-  border-radius: 50%;
+footer div {
+  margin-left: 30px;
+}
+
+footer a {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
 }
 
 main {
@@ -105,21 +118,31 @@ section {
 section h1 {
   font-size: 2rem;
   color: #98b796;
+  font-weight: 700;
 }
 
-section .projects {
+section div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
-section .projects article {
-  max-width: 28%;
+section div a {
+  width: 250px height;
+}
+
+section div a:hover {
+  -webkit-animation-name: blurry;
+          animation-name: blurry;
 }
 
 @-webkit-keyframes blurry {
