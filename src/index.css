@@ -27,7 +27,7 @@ nav {
 
 nav a {
   margin-left: 25px;
-  margin-right: 5px;
+  margin-right: 25px;
   text-decoration: none;
 }
 
@@ -75,11 +75,15 @@ body #avely img {
     margin: 25px;
   }
   body nav {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 10px;
   }
   body nav a {
     margin: 5px;
+    margin-left: 40px;
+  }
+  body main {
+    margin-left: 40px;
   }
   body main article {
     font-size: 1.5rem;
@@ -106,16 +110,25 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 30px;
+  color: grey;
 }
 
 footer div {
-  margin-left: 30px;
+  margin-left: 20px;
+  color: grey;
 }
 
 footer a {
+  height: 40px;
+  width: 40px;
   margin-left: 30px;
   height: 50px;
   width: 50px;
+}
+
+footer a img {
+  height: 30px;
+  width: 30px;
 }
 
 main {
@@ -137,6 +150,7 @@ span span:hover {
 
 article {
   font-size: 2rem;
+  max-width: 900px;
 }
 
 section {
@@ -150,6 +164,8 @@ section h1 {
   font-size: 2rem;
   color: #98b796;
   font-weight: 700;
+  margin-left: 40px;
+  margin-bottom: 40px;
 }
 
 section div {
@@ -165,6 +181,7 @@ section div {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  gap: 30px;
 }
 
 section div a {
@@ -173,39 +190,8 @@ section div a {
       flex-basis: auto;
 }
 
-section div a:hover {
-  -webkit-animation-name: blurry;
-          animation-name: blurry;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
 section div a img {
-  width: 350px;
+  width: 400px;
   height: 350px;
-}
-
-@-webkit-keyframes blurry {
-  0% {
-    background-color: #98b7965b;
-  }
-  50% {
-    background-color: #98b7967e;
-  }
-  100% {
-    background-color: #98b796a8;
-  }
-}
-
-@keyframes blurry {
-  0% {
-    background-color: #98b7965b;
-  }
-  50% {
-    background-color: #98b7967e;
-  }
-  100% {
-    background-color: #98b796a8;
-  }
 }
 /*# sourceMappingURL=index.css.map */

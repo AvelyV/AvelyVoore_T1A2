@@ -1,0 +1,160 @@
+* {
+  color: #fffcef;
+  font-family: 'Teko', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  height: 100px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  border-bottom: 1px white;
+}
+
+nav a {
+  margin-left: 25px;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: overline underline;
+  color: #98b796;
+}
+
+@media (max-width: 800px) {
+  nav {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  nav a {
+    margin: 5px;
+  }
+}
+
+body {
+  font-weight: normal;
+  line-height: 1.5;
+  color: #cfcfcf;
+}
+
+h2 {
+  line-height: 1.2;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  width: 945px;
+  max-width: 95%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.button {
+  position: relative;
+  padding: 12px 30px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid transparent;
+}
+
+.blue .button {
+  color: #5eb2eb;
+  text-decoration: none;
+}
+
+.green .button {
+  color: #8bfaa3;
+  text-decoration: none;
+}
+
+.red .button {
+  color: #e26b6b;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.blue {
+  background-color: rgba(94, 179, 235, 0.8);
+}
+
+.red {
+  background-color: rgba(226, 107, 107, 0.8);
+}
+
+.green {
+  background-color: rgba(87, 209, 114, 0.8);
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  padding: 5% 0;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 300px;
+  max-width: 90%;
+  height: auto;
+  padding: 40px;
+  margin: 4px;
+}
+
+.card h2 {
+  margin: 40px 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.card p {
+  margin-bottom: 90px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+/*# sourceMappingURL=blog.css.map */
