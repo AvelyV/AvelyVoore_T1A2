@@ -142,6 +142,7 @@ a {
   height: auto;
   padding: 40px;
   margin: 4px;
+  border-radius: 10px;
 }
 
 .card h2 {
