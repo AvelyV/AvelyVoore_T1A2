@@ -112,7 +112,10 @@ a {
 
 .green {
     background-color: rgba(87, 209, 114, 0.8);
-}
+} 
+
+
+
 
 .main {
     width: 100%;
@@ -149,4 +152,28 @@ a {
 
 .card:hover {
     transform: scale(1.07);
+}
+
+
+//footer
+footer {
+    grid-area: footer;
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto 0;
+    color: grey;
+    div {
+        margin-left: 20px;
+        color: grey;
+    }
+    a {
+        margin: auto 15px;
+        img {
+            height: 30px;
+            width: 30px;
+        }
+    }
 }

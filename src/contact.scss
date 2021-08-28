@@ -32,3 +32,28 @@ nav {
         color: $accentcolor;
     }
 }
+
+
+
+//footer
+footer {
+    grid-area: footer;
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto 0;
+    color: grey;
+    div {
+        margin-left: 20px;
+        color: grey;
+    }
+    a {
+        margin: auto 15px;
+        img {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
