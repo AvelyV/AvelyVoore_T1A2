@@ -2,6 +2,16 @@ $maincolor: black;
 $secondarycolor: #fffcef;
 $accentcolor: #98b796;
 
+
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                        "blog blog blog"
+                        "footer footer footer"
+                        ;
+
+}
+
 * {
     color: $secondarycolor;
     font-family: 'Teko', sans-serif;
@@ -66,12 +76,6 @@ a {
     display: inline-block;
 }
 
-.container {
-    width: 945px;
-    max-width: 95%;
-    padding: 0 10px;
-    margin: 0 auto;
-}
 
 .button {
     position: relative;
@@ -116,8 +120,9 @@ a {
 
 
 
-
+//blog cards
 .main {
+    grid-area: blog;
     width: 100%;
     height: auto;
     padding: 5% 0;
@@ -129,26 +134,31 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 945px;
+        max-width: 95%;
+        padding: 0 10px;
+        margin: 0 auto;
+
+        .card {
+            width: 300px;
+            max-width: 90%;
+            height: auto;
+            padding: 40px;
+            margin: 4px;
+            border-radius: 10px;
+            h2 {
+                margin: 40px 0;
+                font-size: 2rem;
+                color: white;
+            }
+            p {
+                margin-bottom: 90px;
+            }
+        }
     }
 }
 
 
-.card {
-    width: 300px;
-    max-width: 90%;
-    height: auto;
-    padding: 40px;
-    margin: 4px;
-    border-radius: 10px;
-    h2 {
-        margin: 40px 0;
-        font-size: 2rem;
-        color: white;
-    }
-    p {
-        margin-bottom: 90px;
-    }
-}
 
 .card:hover {
     transform: scale(1.07);
