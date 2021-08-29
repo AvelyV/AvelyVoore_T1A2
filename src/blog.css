@@ -1,3 +1,10 @@
+body {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "blog blog blog" "footer footer footer";
+}
+
 * {
   color: #fffcef;
   font-family: 'Teko', sans-serif;
@@ -7,11 +14,10 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: black;
-}
-
 nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,13 +72,6 @@ a {
   display: inline-block;
 }
 
-.container {
-  width: 945px;
-  max-width: 95%;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
 .button {
   position: relative;
   padding: 12px 30px;
@@ -117,6 +116,10 @@ a {
 }
 
 .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: blog;
   width: 100%;
   height: auto;
   padding: 5% 0;
@@ -134,9 +137,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 945px;
+  max-width: 95%;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
-.card {
+.main .container .card {
   width: 300px;
   max-width: 90%;
   height: auto;
@@ -145,18 +152,55 @@ a {
   border-radius: 10px;
 }
 
-.card h2 {
+.main .container .card h2 {
   margin: 40px 0;
   font-size: 2rem;
   color: white;
 }
 
-.card p {
+.main .container .card p {
   margin-bottom: 90px;
 }
 
 .card:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  color: grey;
+}
+
+footer div {
+  margin-left: 20px;
+  color: grey;
+}
+
+footer a {
+  margin: auto 15px;
+}
+
+footer a img {
+  height: 30px;
+  width: 30px;
 }
 /*# sourceMappingURL=blog.css.map */

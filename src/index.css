@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 * {
   color: #fffcef;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 nav {
@@ -72,7 +73,7 @@ body #avely img {
   body img {
     width: 250px;
     height: 250px;
-    margin: 25px;
+    margin: 25px auto;
   }
   body nav {
     font-size: 0.9rem;
@@ -88,43 +89,6 @@ body #avely img {
   body main article {
     font-size: 1.5rem;
   }
-}
-
-footer {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: footer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 150px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto 0;
-  color: grey;
-}
-
-footer div {
-  margin-left: 20px;
-  color: grey;
-}
-
-footer a {
-  margin: auto 15px;
-}
-
-footer a img {
-  height: 30px;
-  width: 30px;
 }
 
 main {
@@ -154,6 +118,8 @@ article {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: project;
+  background-color: red;
+  z-index: -1;
 }
 
 #projects h1 {
@@ -182,5 +148,43 @@ article {
 #projects div a img {
   width: 400px;
   height: 350px;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  color: grey;
+  background-color: white;
+}
+
+footer div {
+  margin-left: 20px;
+  color: grey;
+}
+
+footer a {
+  margin: auto 15px;
+}
+
+footer a img {
+  height: 30px;
+  width: 30px;
 }
 /*# sourceMappingURL=index.css.map */

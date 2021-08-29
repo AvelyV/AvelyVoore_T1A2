@@ -28,12 +28,45 @@ nav {
 
 nav a {
   margin-left: 25px;
-  margin-right: 5px;
+  margin-right: 25px;
   text-decoration: none;
 }
 
 nav a:hover {
   text-decoration: overline underline;
   color: #98b796;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  color: grey;
+}
+
+footer div {
+  margin-left: 20px;
+  color: grey;
+}
+
+footer a {
+  margin: auto 15px;
+}
+
+footer a img {
+  height: 30px;
+  width: 30px;
 }
 /*# sourceMappingURL=contact.css.map */

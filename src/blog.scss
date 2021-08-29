@@ -4,6 +4,7 @@ $accentcolor: #98b796;
 
 
 body {
+    background-color: $maincolor;
     display: grid;
     grid-template-areas: "header header header"
                         "blog blog blog"
@@ -20,9 +21,6 @@ body {
     box-sizing: border-box;
 }
 
-body{
-    background-color: $maincolor;
-}
 
 nav {
     grid-area: header;
@@ -40,6 +38,8 @@ nav {
         margin-right: 25px;
         text-decoration: none;
     }
+
+    //NOT WORKING   
     a:hover {
         text-decoration: overline underline;
         color: $accentcolor;
