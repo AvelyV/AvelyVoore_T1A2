@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 * {
   background-color: black;
   color: #fffcef;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Teko', sans-serif;
 }
 
 nav {
@@ -119,7 +118,7 @@ article {
   -ms-grid-column-span: 3;
   grid-area: project;
   background-color: black h1;
-  background-color-font-size: 2rem;
+  background-color-font-size: 3rem;
   background-color-color: #98b796;
   background-color-font-weight: 700;
   background-color-margin-left: 40px;
@@ -145,6 +144,7 @@ article {
 #projects div a img {
   width: 400px;
   height: 350px;
+  background-size: cover;
 }
 
 footer {

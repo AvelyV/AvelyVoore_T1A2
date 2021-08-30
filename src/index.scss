@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-
 $maincolor: black;
 $secondarycolor: #fffcef;
 $accentcolor: #98b796;
@@ -9,8 +7,8 @@ $accentcolor: #98b796;
 * {
     background-color: $maincolor;
     color: $secondarycolor;
-    // font-family: 'Teko', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Teko', sans-serif;
+
 }
 
 
@@ -126,8 +124,9 @@ main {
 #projects {
     grid-area: project;
     background-color: $maincolor
+
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         color: $accentcolor;
         font-weight: 700;
         margin-left: 40px;
@@ -146,6 +145,7 @@ main {
                 img{
                     width: 400px;
                     height: 350px;
+                    background-size: cover;
                     }
                 }
             }
