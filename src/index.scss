@@ -1,16 +1,16 @@
 $maincolor: black;
-$secondarycolor: #fffcef;
+$secondarycolor: #fffbe9;
 $accentcolor: #98b796;
-
 
 //desktop design is defult
 * {
     background-color: $maincolor;
     color: $secondarycolor;
     font-family: 'Teko', sans-serif;
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 //navigation bar
 nav {
@@ -18,12 +18,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.5rem;
-    text-decoration: none;
+    font-size: 30px;
     height: 100px;
     margin-bottom: 50px;
     font-weight: 700;
-    border-bottom: 1px white;
+    // border-bottom: 1px white;
     a {
         margin-left: 25px;
         margin-right: 25px;
@@ -36,7 +35,7 @@ nav {
 }
 
 //page layout
-#everything {
+body {
     display: grid;
     grid-template-areas: "header header header"
                          "picture main main"
@@ -44,93 +43,39 @@ nav {
                          "footer footer footer"
                          ;
     grid-template-columns: repeat(3, 1fr);
-    background-color:$maincolor;
+    background-color: $maincolor;
     max-width: 1024px;
     margin: 0 auto;
     #avely{
         grid-area: picture;
         border-radius: 50%;
+        margin: 15px;
     }
 }
-
-//Tablet design 1024 * 1366
-//IpadPro
-@media only screen and (min-width: 412px) and (max-width: 1024px) {
-    body {
-        grid-template-areas:  "header header header"
-                              "picture picture picture"
-                              "main main main"
-                              "project project project"
-                              "footer footer footer";
-    img {
-        width: 300px;
-        height: 300px
-    }
-    }
-}
-
-//Phone design 411 * 731
-//Google Pixel 2
-@media only screen and (max-width: 411px) {
-    body {
-        grid-template-areas: "header header header"
-                            "picture picture picture"
-                            "main main main"
-                            "project project project"
-                            "footer footer footer";
-    img {
-        width: 250px;
-        height: 250px;
-        margin: 25px auto;
-    }
-    nav {
-        font-size: 0.9rem;
-        margin-bottom: 10px;
-
-        a {
-            margin: 5px;
-            margin-left: 40px;
-        }
-    }
-    main {
-        margin-left: 40px;
-        article {
-            font-size: 1.5rem;
-        }
-    }
-    }
-}
-
 
 //about me section
 main {
     grid-area: main;
     margin: 10px;
     margin-bottom: 60px;
+    font-size: 35px;
     }
     span {
         color: $accentcolor;
-        span:hover {
-            color: $secondarycolor;
-        }
+        font-size: 45px;
     }
     article {
-        font-size: 2rem;
         max-width: 900px;
     }
-
 
 //projects section
 #projects {
     grid-area: project;
-    background-color: $maincolor
-
     h1 {
-        font-size: 3rem;
         color: $accentcolor;
         font-weight: 700;
-        margin-left: 40px;
-        margin-bottom: 40px;
+        margin: 40px 40px;
+        font-size: 35px;
     }
     div{
         display: flex;
@@ -151,10 +96,6 @@ main {
             }
 
         }
-
-    
-
-
     
 //footer
 footer {
@@ -177,4 +118,53 @@ footer {
             width: 30px;
         }
     }
+}
+
+
+//Phone design 414 * 736
+//iPhone 6/7/8 Plus
+@media only screen and (max-width: 414px) {
+    body {
+        font-size: 20px;
+        grid-template-areas:"header header"
+                            "picture picture"
+                            "main main"
+                            "project project"
+                            "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+    img {
+        width: 200px;
+        height: 200px;
+        margin: auto; 
+    }
+    nav {
+        margin-bottom: 10px;
+        font-size: 18px;
+        a {
+            margin: 5px;
+            margin-left: 40px;
+        }
+    }
+    main {
+        margin-left: 15px;
+        article {
+            font-size: 16px;
+
+            span {
+                font-size: 25px;
+            }
+        }
+    }
+    }
+}
+
+//Tablet design 768 * 1024
+//Ipad
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+    
 }
