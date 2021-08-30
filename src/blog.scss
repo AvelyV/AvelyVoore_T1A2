@@ -62,12 +62,6 @@ nav {
 
 //cards
 
-body {
-    font-weight: normal;
-    line-height: 1.5;
-    color: rgb(207, 207, 207);
-}
-
 h2 {
     line-height: 1.2;
 }
@@ -84,20 +78,11 @@ a {
     border-radius: 20px;
     background-color: white;
     border: 2px solid transparent;
+    text-decoration: none;
+    color: $accentcolor;
 
 }
-.blue .button {
-    color: rgb(94, 178, 235);
-    text-decoration: none;
-}
-.green .button{
-    color: rgb(139, 250, 163);
-    text-decoration: none;
-}
-.red .button {
-    color: rgb(226, 107, 107);
-    text-decoration: none;
-}
+
 
 .button:hover {
     background-color: transparent;
@@ -106,17 +91,10 @@ a {
     transition-duration: 0.4s;    
 }
 
-.blue {
-    background-color: rgba(94, 179, 235, 0.8);
+.card {
+    background-color: rgb(48, 47, 47);
 }
 
-.red {
-    background-color: rgba(226, 107, 107, 0.8);
-}
-
-.green {
-    background-color: rgba(87, 209, 114, 0.8);
-} 
 
 
 
@@ -146,10 +124,17 @@ a {
             padding: 40px;
             margin: 4px;
             border-radius: 10px;
-            h2 {
-                margin: 40px 0;
-                font-size: 2rem;
-                color: white;
+            transition: transform 0.5s;
+
+
+            .img {
+                margin: 0.5rem;;
+
+            }
+                h2 {
+                    margin: 40px 0;
+                    font-size: 2rem;
+                    color: white;
             }
             p {
                 margin-bottom: 90px;

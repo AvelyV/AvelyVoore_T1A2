@@ -4,7 +4,10 @@ $maincolor: black;
 $secondarycolor: #fffcef;
 $accentcolor: #98b796;
 
+
+//desktop design is defult
 * {
+    background-color: $maincolor;
     color: $secondarycolor;
     // font-family: 'Teko', sans-serif;
     font-family: 'Oswald', sans-serif;
@@ -35,7 +38,7 @@ nav {
 }
 
 //page layout
-body {
+#everything {
     display: grid;
     grid-template-areas: "header header header"
                          "picture main main"
@@ -44,18 +47,17 @@ body {
                          ;
     grid-template-columns: repeat(3, 1fr);
     background-color:$maincolor;
+    max-width: 1024px;
+    margin: 0 auto;
     #avely{
         grid-area: picture;
-        // display: flexbox;
-        // justify-content: center;
-        img {
-            border-radius: 50%;
-        }
+        border-radius: 50%;
     }
 }
 
-//Tablet design
-@media (max-width: 1050px) {
+//Tablet design 1024 * 1366
+//IpadPro
+@media only screen and (min-width: 412px) and (max-width: 1024px) {
     body {
         grid-template-areas:  "header header header"
                               "picture picture picture"
@@ -66,13 +68,12 @@ body {
         width: 300px;
         height: 300px
     }
-
     }
-
 }
 
-//Mobile phone design
-@media (max-width: 700px) {
+//Phone design 411 * 731
+//Google Pixel 2
+@media only screen and (max-width: 411px) {
     body {
         grid-template-areas: "header header header"
                             "picture picture picture"
@@ -124,8 +125,7 @@ main {
 //projects section
 #projects {
     grid-area: project;
-    background-color: rgb(255, 0, 0);
-    z-index: -1;
+    background-color: $maincolor
     h1 {
         font-size: 2rem;
         color: $accentcolor;
@@ -138,7 +138,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        // width: 100%;
+        width: 100%;
         gap: 30px;
 
             a {
@@ -166,7 +166,6 @@ footer {
     align-items: center;
     margin: auto 0;
     color: grey;
-    background-color: white;
     div {
         margin-left: 20px;
         color: grey;

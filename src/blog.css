@@ -58,12 +58,6 @@ nav a:hover {
   }
 }
 
-body {
-  font-weight: normal;
-  line-height: 1.5;
-  color: #cfcfcf;
-}
-
 h2 {
   line-height: 1.2;
 }
@@ -78,21 +72,8 @@ a {
   border-radius: 20px;
   background-color: white;
   border: 2px solid transparent;
-}
-
-.blue .button {
-  color: #5eb2eb;
   text-decoration: none;
-}
-
-.green .button {
-  color: #8bfaa3;
-  text-decoration: none;
-}
-
-.red .button {
-  color: #e26b6b;
-  text-decoration: none;
+  color: #98b796;
 }
 
 .button:hover {
@@ -103,16 +84,8 @@ a {
           transition-duration: 0.4s;
 }
 
-.blue {
-  background-color: rgba(94, 179, 235, 0.8);
-}
-
-.red {
-  background-color: rgba(226, 107, 107, 0.8);
-}
-
-.green {
-  background-color: rgba(87, 209, 114, 0.8);
+.card {
+  background-color: #302f2f;
 }
 
 .main {
@@ -150,6 +123,14 @@ a {
   padding: 40px;
   margin: 4px;
   border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.main .container .card .img {
+  margin: 0.5rem;
 }
 
 .main .container .card h2 {

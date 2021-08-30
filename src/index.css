@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 * {
+  background-color: black;
   color: #fffcef;
   font-family: 'Oswald', sans-serif;
 }
@@ -37,26 +38,25 @@ nav a:hover {
   color: #98b796;
 }
 
-body {
+#everything {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header header header" "picture main main" "project project project" "footer footer footer";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   background-color: black;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-body #avely {
+#everything #avely {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: picture;
-}
-
-body #avely img {
   border-radius: 50%;
 }
 
-@media (max-width: 1050px) {
+@media only screen and (min-width: 412px) and (max-width: 1024px) {
   body {
         grid-template-areas: "header header header" "picture picture picture" "main main main" "project project project" "footer footer footer";
   }
@@ -66,7 +66,7 @@ body #avely img {
   }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 411px) {
   body {
         grid-template-areas: "header header header" "picture picture picture" "main main main" "project project project" "footer footer footer";
   }
@@ -118,16 +118,12 @@ article {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: project;
-  background-color: red;
-  z-index: -1;
-}
-
-#projects h1 {
-  font-size: 2rem;
-  color: #98b796;
-  font-weight: 700;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  background-color: black h1;
+  background-color-font-size: 2rem;
+  background-color-color: #98b796;
+  background-color-font-weight: 700;
+  background-color-margin-left: 40px;
+  background-color-margin-bottom: 40px;
 }
 
 #projects div {
@@ -142,6 +138,7 @@ article {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   gap: 30px;
 }
 
@@ -171,7 +168,6 @@ footer {
           align-items: center;
   margin: auto 0;
   color: grey;
-  background-color: white;
 }
 
 footer div {
