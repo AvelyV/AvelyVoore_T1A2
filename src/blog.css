@@ -29,7 +29,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   height: 100px;
   margin-bottom: 50px;
@@ -40,6 +40,11 @@ nav a {
   margin-left: 25px;
   margin-right: 25px;
   text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: overline underline;
+  color: #87a884;
 }
 
 .main {
@@ -64,15 +69,13 @@ nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 945px;
-  max-width: 95%;
   padding: 0 10px;
   margin: 0 auto;
 }
 
 .main .container .card {
   width: 300px;
-  max-width: 90%;
+  max-width: 95%;
   height: 500px;
   padding: 40px;
   margin: 4px;
