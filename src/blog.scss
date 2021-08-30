@@ -120,7 +120,7 @@ a {
         .card {
             width: 300px;
             max-width: 90%;
-            height: auto;
+            height: 500px;
             padding: 40px;
             margin: 4px;
             border-radius: 10px;
@@ -132,12 +132,12 @@ a {
 
             }
                 h2 {
-                    margin: 40px 0;
+                    margin: 10px 0;
                     font-size: 2rem;
-                    color: white;
+                    color: $accentcolor
             }
             p {
-                margin-bottom: 90px;
+                margin-bottom: 60px;
             }
         }
     }
