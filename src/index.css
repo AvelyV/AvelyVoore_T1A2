@@ -152,7 +152,6 @@ footer a img {
 
 @media only screen and (max-width: 414px) {
   body {
-    font-size: 20px;
         grid-template-areas: "header header" "picture picture" "main main" "project project" "footer footer";
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -174,10 +173,10 @@ footer a img {
     margin-left: 15px;
   }
   body main article {
-    font-size: 16px;
+    font-size: 25px;
   }
   body main article span {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 

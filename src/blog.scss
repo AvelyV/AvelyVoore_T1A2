@@ -10,6 +10,7 @@ body {
                         "blog blog blog"
                         "footer footer footer"
                         ;
+    width: 100%;
 
 }
 
@@ -27,75 +28,17 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 30px;
     text-decoration: none;
     height: 100px;
     margin-bottom: 50px;
     font-weight: 700;
-    border-bottom: 1px white;
     a {
         margin-left: 25px;
         margin-right: 25px;
         text-decoration: none;
     }
-
-    //NOT WORKING   
-    a:hover {
-        text-decoration: overline underline;
-        color: $accentcolor;
-    }
 }
-
-
-//nav on phone
-@media (max-width: 800px) {
-    nav {
-        font-size: 0.9rem;
-        margin-bottom: 10px;
-        a {
-            margin: 5px;
-            margin-left: 40px;
-        }
-    }
-}
-
-
-//cards
-
-h2 {
-    line-height: 1.2;
-}
-
-a {
-    display: inline-block;
-}
-
-
-.button {
-    position: relative;
-    // bottom: 20px;
-    padding: 12px 30px;
-    border-radius: 20px;
-    background-color: white;
-    border: 2px solid transparent;
-    text-decoration: none;
-    color: $accentcolor;
-
-}
-
-
-.button:hover {
-    background-color: transparent;
-    border-color: white;
-    color: white;
-    transition-duration: 0.4s;    
-}
-
-.card {
-    background-color: rgb(48, 47, 47);
-}
-
-
 
 
 //blog cards
@@ -116,7 +59,6 @@ a {
         max-width: 95%;
         padding: 0 10px;
         margin: 0 auto;
-
         .card {
             width: 300px;
             max-width: 90%;
@@ -125,25 +67,39 @@ a {
             margin: 4px;
             border-radius: 10px;
             transition: transform 0.5s;
-
-
-            .img {
-                margin: 0.5rem;;
-
-            }
-                h2 {
-                    margin: 10px 0;
-                    font-size: 2rem;
-                    color: $accentcolor
+            background-color: rgba(48, 47, 47, 0.521);
+            h2 {
+                margin: 10px 0;
+                font-size: 2rem;
+                color: $accentcolor;
+                line-height: 1.2;
             }
             p {
                 margin-bottom: 60px;
             }
+            }
+         
         }
     }
+
+//buttons 
+.button {
+    position: relative;
+    // bottom: 20px;
+    padding: 12px 30px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: $accentcolor;
+    }
+//effects
+.button:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    transition-duration: 0.4s;    
 }
-
-
 
 .card:hover {
     transform: scale(1.07);
@@ -169,6 +125,19 @@ footer {
         img {
             height: 30px;
             width: 30px;
+        }
+    }
+}
+
+//Phone design 414 * 736
+//iPhone 6/7/8 Plus
+@media only screen and (max-width: 414px) {
+    nav {
+        margin-bottom: 10px;
+        font-size: 25px;
+        a {
+            margin: 15px;
+            margin-left: 40px;
         }
     }
 }

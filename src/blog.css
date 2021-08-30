@@ -3,6 +3,7 @@ body {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header header header" "blog blog blog" "footer footer footer";
+  width: 100%;
 }
 
 * {
@@ -28,64 +29,17 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+  font-size: 30px;
   text-decoration: none;
   height: 100px;
   margin-bottom: 50px;
   font-weight: 700;
-  border-bottom: 1px white;
 }
 
 nav a {
   margin-left: 25px;
   margin-right: 25px;
   text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: overline underline;
-  color: #87a884;
-}
-
-@media (max-width: 800px) {
-  nav {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-  }
-  nav a {
-    margin: 5px;
-    margin-left: 40px;
-  }
-}
-
-h2 {
-  line-height: 1.2;
-}
-
-a {
-  display: inline-block;
-}
-
-.button {
-  position: relative;
-  padding: 12px 30px;
-  border-radius: 20px;
-  background-color: white;
-  border: 2px solid transparent;
-  text-decoration: none;
-  color: #87a884;
-}
-
-.button:hover {
-  background-color: transparent;
-  border-color: white;
-  color: white;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-
-.card {
-  background-color: #302f2f;
 }
 
 .main {
@@ -127,20 +81,36 @@ a {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.main .container .card .img {
-  margin: 0.5rem;
+  background-color: rgba(48, 47, 47, 0.521);
 }
 
 .main .container .card h2 {
   margin: 10px 0;
   font-size: 2rem;
   color: #87a884;
+  line-height: 1.2;
 }
 
 .main .container .card p {
   margin-bottom: 60px;
+}
+
+.button {
+  position: relative;
+  padding: 12px 30px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #87a884;
+}
+
+.button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .card:hover {
@@ -183,5 +153,16 @@ footer a {
 footer a img {
   height: 30px;
   width: 30px;
+}
+
+@media only screen and (max-width: 414px) {
+  nav {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  nav a {
+    margin: 15px;
+    margin-left: 40px;
+  }
 }
 /*# sourceMappingURL=blog.css.map */

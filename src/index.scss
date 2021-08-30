@@ -125,7 +125,6 @@ footer {
 //iPhone 6/7/8 Plus
 @media only screen and (max-width: 414px) {
     body {
-        font-size: 20px;
         grid-template-areas:"header header"
                             "picture picture"
                             "main main"
@@ -148,10 +147,10 @@ footer {
     main {
         margin-left: 15px;
         article {
-            font-size: 16px;
+            font-size: 25px;
 
             span {
-                font-size: 25px;
+                font-size: 35px;
             }
         }
     }
