@@ -1,0 +1,39 @@
+$maincolor: black;
+$secondarycolor: #fffbe9;
+$accentcolor: #98b796;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Tourney:wght@300&display=swap');
+
+body {
+    background-color: $maincolor;
+    color: $secondarycolor;
+    font-family: 'Teko', sans-serif;
+}
+
+div {
+    margin: 0 auto;
+    width: 700px;
+    max-width: 90%;
+    a{
+        text-decoration: none;
+        color: $secondarycolor;
+    }
+    h2 {
+        font-size: 35px;
+        color: $accentcolor;
+    }
+    p {
+        line-height: 1px;
+        font-size: 15px;
+    }
+    img {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+    article {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+}
