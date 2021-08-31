@@ -2,8 +2,6 @@ $maincolor: black;
 $secondarycolor: #fffbe9;
 $accentcolor: #98b796;
 
-// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Tourney:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
 
@@ -27,7 +25,6 @@ nav {
     height: 100px;
     margin-bottom: 50px;
     font-weight: 700;
-    // border-bottom: 1px white;
     a {
         margin-left: 25px;
         margin-right: 25px;
@@ -71,15 +68,12 @@ main {
     }
     article {
         max-width: 900px;
-        // font-family: 'Josefin Sans', sans-serif;
     }
 
 //projects section
 #projects {
     grid-area: project;
     h1 {
-        // font-family: 'Josefin Sans', sans-serif;
-        // font-family: 'Tourney', cursive;
         font-family: 'Londrina Shadow', cursive;
         // color: $accentcolor;
         font-weight: 700;
@@ -88,7 +82,7 @@ main {
         // text-align: center;
 
     }
-    .p{
+    .container{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -97,15 +91,15 @@ main {
         gap: 30px;
 
         .link{
-            a {
-                width: 400px;
-                height: 350px;
+            // a {
+            //     width: 400px;
+            //     height: 350px;
                 img{
                     width: 400px;
                     height: 350px;
                     background-size: cover;
                     }
-            }
+            // }
 
             .overlay {
                 display: inline-block;
@@ -114,7 +108,7 @@ main {
                 height: 350px;
                 width: 400px;
                 &:hover {
-                    display: none;
+                    background-color: rgba(0, 0, 0, 0);
                 }
             }
         }
@@ -131,7 +125,7 @@ main {
 footer {
     grid-area: footer;
     display: flex;
-    height: 150px;
+    height: 100px;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;

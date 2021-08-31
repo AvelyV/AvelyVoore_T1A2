@@ -10,7 +10,6 @@
     <title>Avely</title>
 </head>
 <body>
-    <!-- <div id="everything"> -->
         <nav>
             <a href="#projects">PROJECTS</a>
             <a href="blog.html">BLOG</a>
@@ -29,24 +28,31 @@
         </main>
         <section id="projects">
             <h1>PROJECTS</h1>                            
-            <div class="p">
-                <div class="link">
+            <div class="container">
+                <div 
+                    data-href="https://annivoore.netlify.app/" 
+                    class="link">
                     <div class="overlay"></div>
-                    <a href="https://annivoore.netlify.app/" target="_blank"><img class="project" src="img/anni15.PNG" alt="Image of anni's web page homepage"></a>
-                    
+                    <img class="project" src="img/anni15.PNG" alt="Image of anni's web page homepage">
                 </div>
-                <div class="link">
+                <div
+                    data-href="#" 
+                    class="link">
                     <div class="overlay"></div>
-                    <a href="#" target="_blank"><img class="project" src="img/tech.jpg" alt="Image of google homepage"></a>
+                    <img class="project" src="img/tech.jpg" alt="Image of google homepage">                
                 </div>
-                <div class="link">
+                <div
+                    data-href="#" 
+                    class="link">
                     <div class="overlay"></div>
-                    <a href="#" target="_blank"><img class="project" src="img/tech.jpg" alt="Image of google homepage"></a>
+                    <img class="project" src="img/tech.jpg" alt="Image of google homepage">
 
                 </div>
-                <div class="link">
+                <div 
+                    class="link"
+                    data-href="#">
                     <div class="overlay"></div>
-                    <a href="#" target="_blank"><img class="project" src="img/tech.jpg" alt="Image of google homepage"></a>
+                    <img class="project" src="img/tech.jpg" alt="Image of google homepage">
 
                 </div>                 
             </div>
@@ -58,6 +64,16 @@
             <a href="https://www.linkedin.com/in/avely-voore/" target="_blank"><img src="img/linkedin50.jpg" alt="Linkedin logo"></a>
             <a href="https://codepen.io/avelyv" target="_blank"><img src="codepen50.png" alt="Codepen logo"></a>
         </footer>
-    <!-- </div> -->
+
+        // js for project cards
+        <script>
+            function handleClick(e) {
+                window.open(e.target.parentElement.dataset.href, '_blank');
+            }
+            let links = document.querySelectorAll(".link")
+            links.forEach(link => {
+                link.addEventListener("click", (e) => handleClick(e))
+            })
+        </script>
 </body>
 </html>

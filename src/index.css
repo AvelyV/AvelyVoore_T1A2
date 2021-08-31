@@ -93,7 +93,7 @@ article {
   font-size: 45px;
 }
 
-#projects .p {
+#projects .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,18 +109,13 @@ article {
   gap: 30px;
 }
 
-#projects .p .link a {
-  width: 400px;
-  height: 350px;
-}
-
-#projects .p .link a img {
+#projects .container .link img {
   width: 400px;
   height: 350px;
   background-size: cover;
 }
 
-#projects .p .link .overlay {
+#projects .container .link .overlay {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.521);
   position: absolute;
@@ -128,8 +123,8 @@ article {
   width: 400px;
 }
 
-#projects .p .link .overlay:hover {
-  display: none;
+#projects .container .link .overlay:hover {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 footer {
@@ -140,7 +135,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 150px;
+  height: 100px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

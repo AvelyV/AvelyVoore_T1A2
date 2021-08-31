@@ -9,6 +9,7 @@ $accentcolor: #98b796;
 
 body{
     background-color: $maincolor;
+    height: 100vh;
 }
 
 nav {
@@ -31,6 +32,13 @@ nav {
         text-decoration: overline underline;
         color: $accentcolor;
     }
+}
+
+.bigcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 #check {
