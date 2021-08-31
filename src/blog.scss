@@ -82,6 +82,10 @@ nav {
             p {
                 margin-bottom: 60px;
             }
+            .date {
+                color: rgb(170, 170, 170);
+                font-size: 10px;
+            }
             }
          
         }
@@ -92,11 +96,11 @@ nav {
     position: relative;
     // bottom: 20px;
     padding: 12px 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
     border: 2px solid transparent;
     text-decoration: none;
-    color: $accentcolor;
+    color: #749e70;
     }
 //effects
 .button:hover {
@@ -139,9 +143,10 @@ footer {
 @media only screen and (max-width: 414px) {
     nav {
         margin-bottom: 10px;
-        font-size: 25px;
+        font-size: 18px;
+        justify-content: space-around;
         a {
-            margin: 15px;
+            margin: 0px;
             margin-left: 40px;
         }
     }

@@ -37,6 +37,10 @@ nav a:hover {
   color: #98b796;
 }
 
+#check a {
+  text-decoration: none;
+}
+
 #resume {
   color: #98b796;
 }

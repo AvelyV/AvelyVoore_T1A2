@@ -27,14 +27,47 @@ div p {
 }
 
 div img {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
+  text-align: center;
+  max-width: 100%;
 }
 
 div article {
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 20px;
+}
+
+footer {
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  color: grey;
+}
+
+footer div {
+  margin-left: 20px;
+  color: grey;
+}
+
+footer a {
+  margin: auto 15px;
+}
+
+footer a img {
+  height: 30px;
+  width: 30px;
 }
 /*# sourceMappingURL=blogpost.css.map */

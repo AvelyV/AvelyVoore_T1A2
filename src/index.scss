@@ -53,7 +53,7 @@ body {
     margin: 0 auto;
     #avely{
         grid-area: picture;
-        // border-radius: 50%;
+        border-radius: 50%;
         margin: 15px;
     }
 }
@@ -88,7 +88,7 @@ main {
         // text-align: center;
 
     }
-    div{
+    .p{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -96,17 +96,36 @@ main {
         width: 100%;
         gap: 30px;
 
+        .link{
             a {
-                // flex-basis: auto;
+                width: 400px;
+                height: 350px;
                 img{
                     width: 400px;
                     height: 350px;
                     background-size: cover;
                     }
-                }
             }
 
+            .overlay {
+                display: inline-block;
+                background-color: rgba(0, 0, 0, 0.521);
+                position: absolute;
+                height: 350px;
+                width: 400px;
+                &:hover {
+                    display: none;
+                }
+            }
         }
+
+
+    }
+
+}
+
+
+
     
 //footer
 footer {

@@ -98,14 +98,19 @@ nav a:hover {
   margin-bottom: 60px;
 }
 
+.main .container .card .date {
+  color: #aaaaaa;
+  font-size: 10px;
+}
+
 .button {
   position: relative;
   padding: 12px 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: white;
   border: 2px solid transparent;
   text-decoration: none;
-  color: #87a884;
+  color: #749e70;
 }
 
 .button:hover {
@@ -161,10 +166,12 @@ footer a img {
 @media only screen and (max-width: 414px) {
   nav {
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 18px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav a {
-    margin: 15px;
+    margin: 0px;
     margin-left: 40px;
   }
 }
