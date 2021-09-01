@@ -87,7 +87,6 @@ article {
 }
 
 #projects h1 {
-  font-family: 'Londrina Shadow', cursive;
   font-weight: 700;
   margin: 40px 40px;
   font-size: 45px;
@@ -125,6 +124,7 @@ article {
 
 #projects .container .link .overlay:hover {
   background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 #projects .container .info {

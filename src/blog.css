@@ -48,6 +48,10 @@ nav a:hover {
 }
 
 .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: blog;
   width: 100%;
   height: auto;
   padding: 5% 0;

@@ -47,7 +47,7 @@ nav {
 
 //blog cards
 .main {
-    // grid-area: blog;
+    grid-area: blog;
     width: 100%;
     height: auto;
     padding: 5% 0;
@@ -59,9 +59,6 @@ nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // WHAT IS WRONG WITH THE WIDTH OF CONTAINER
-        // width: 100%;
-        // max-width: 95%;
         padding: 0 10px;
         margin: 0 auto;
         .card {
@@ -95,13 +92,13 @@ nav {
 //buttons 
 .button {
     position: relative;
-    // bottom: 20px;
     padding: 12px 30px;
     border-radius: 10px;
     background-color: white;
     border: 2px solid transparent;
     text-decoration: none;
     color: #749e70;
+
     //effects
     &:hover {
         background-color: transparent;
