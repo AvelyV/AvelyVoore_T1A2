@@ -56,6 +56,8 @@ body #avely {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: picture;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
   border-radius: 50%;
   margin: 15px;
 }
@@ -88,8 +90,9 @@ article {
 
 #projects h1 {
   font-weight: 700;
-  margin: 40px 40px;
+  margin: 70px auto;
   font-size: 45px;
+  text-align: center;
 }
 
 #projects .container {
