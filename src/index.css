@@ -127,6 +127,20 @@ article {
   background-color: rgba(0, 0, 0, 0);
 }
 
+#projects .container .info {
+  font-family: 'Teko', sans-serif;
+  width: 400px;
+  height: 350px;
+}
+
+#projects .container .info h1 {
+  font-family: 'Teko', sans-serif;
+}
+
+#projects .container .info p {
+  font-family: 'Teko', sans-serif;
+}
+
 footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;

@@ -1,5 +1,8 @@
 body {
   background-color: black;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "blog blog blog" "footer footer footer";
   width: 100%;
 }
 
@@ -13,6 +16,10 @@ body {
 }
 
 nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,6 +124,9 @@ nav a:hover {
 }
 
 footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: footer;
   display: -webkit-box;
   display: -ms-flexbox;
