@@ -130,19 +130,16 @@ article {
 }
 
 #projects .container .info {
-  font-family: 'Teko', sans-serif;
   width: 400px;
   height: 350px;
 }
 
 #projects .container .info h1 {
-  font-family: 'Teko', sans-serif;
   margin-top: 0;
   font-size: 50px;
 }
 
 #projects .container .info p {
-  font-family: 'Teko', sans-serif;
   margin-left: 45px;
   margin-right: 30px;
 }

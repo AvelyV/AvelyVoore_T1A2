@@ -14,6 +14,7 @@ body {
 //blogpost
 div {
     max-width: 90%;
+    // back button
     a{
         text-decoration: none;
         color: $secondarycolor;
@@ -54,6 +55,7 @@ footer {
     }
     a {
         margin: auto 15px;
+        // social media icons
         img {
             height: 30px;
             width: 30px;

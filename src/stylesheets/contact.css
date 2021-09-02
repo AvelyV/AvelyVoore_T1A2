@@ -56,13 +56,14 @@ nav a:hover {
 
 .bigcontainer #check {
   margin: 20px;
-}
-
-#check a {
   text-decoration: none;
 }
 
-#resume {
+.bigcontainer #check a {
+  text-decoration: none;
+}
+
+.bigcontainer #check #resume {
   color: #98b796;
 }
 

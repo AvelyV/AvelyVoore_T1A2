@@ -111,6 +111,11 @@ h1 {
   margin-bottom: 50px;
 }
 
+.main .container .card:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
 .button {
   position: relative;
   padding: 12px 30px;
@@ -127,11 +132,6 @@ h1 {
   color: white;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-}
-
-.card:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
 }
 
 footer {
