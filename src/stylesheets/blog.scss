@@ -45,6 +45,11 @@ nav {
     }
 }
 
+h1 {
+    margin-bottom: 50px;
+    font-size: 60px;
+    margin-left: 40px;
+}
 
 //blog cards
 .main {
@@ -147,7 +152,10 @@ footer {
         justify-content: space-around;
         a {
             margin: 0px;
-            margin-left: 40px;
         }
+    }
+    h1 {
+        font-size: 40px;
+        margin-left: 20px;
     }
 }

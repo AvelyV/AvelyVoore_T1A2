@@ -51,7 +51,11 @@ nav a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100vh;
+  height: 80vh;
+}
+
+.bigcontainer #check {
+  margin: 20px;
 }
 
 #check a {

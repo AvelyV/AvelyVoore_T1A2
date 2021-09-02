@@ -8,8 +8,8 @@ body {
     background-color: $maincolor;
     color: $secondarycolor;
     font-family: 'Teko', sans-serif;
-    margin: 0 auto;
-    width: 900px;
+    margin: 40px;
+    max-width: 900px;
 }
 
 //blogpost
@@ -51,7 +51,6 @@ footer {
     div {
         margin-left: 20px;
         color: grey;
-        //works in inspector
         text-align: end;
     }
     a {

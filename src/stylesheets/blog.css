@@ -48,6 +48,12 @@ nav a:hover {
   color: #87a884;
 }
 
+h1 {
+  margin-bottom: 50px;
+  font-size: 60px;
+  margin-left: 40px;
+}
+
 .main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -174,7 +180,10 @@ footer a img {
   }
   nav a {
     margin: 0px;
-    margin-left: 40px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=blog.css.map */

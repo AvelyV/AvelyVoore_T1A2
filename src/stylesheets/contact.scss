@@ -40,7 +40,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 80vh;
+
+    #check {
+        margin: 20px;
+    }
 }
 
 #check {

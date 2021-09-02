@@ -3,8 +3,8 @@ body {
   background-color: black;
   color: #fffbe9;
   font-family: 'Teko', sans-serif;
-  margin: 0 auto;
-  width: 900px;
+  margin: 40px;
+  max-width: 900px;
 }
 
 div {
