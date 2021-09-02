@@ -2,6 +2,14 @@ $maincolor: black;
 $secondarycolor: #fffcef;
 $accentcolor: #87a884;
 
+* {
+    color: $secondarycolor;
+    font-family: 'Teko', sans-serif;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
 
 body {
     background-color: $maincolor;
@@ -13,14 +21,6 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 
-}
-
-* {
-    color: $secondarycolor;
-    font-family: 'Teko', sans-serif;
-    padding: 0;
-    margin: 0; 
-    box-sizing: border-box;
 }
 
 
