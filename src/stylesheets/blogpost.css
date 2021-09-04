@@ -6,14 +6,18 @@ body {
   margin: auto;
 }
 
-body a {
+body div {
+  max-width: 90%;
+  margin: auto;
+}
+
+body div a {
   text-decoration: none;
   color: #fffbe9;
 }
 
 body article {
   max-width: 90%;
-  margin: auto;
 }
 
 body h2 {

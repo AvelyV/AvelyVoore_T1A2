@@ -9,16 +9,20 @@ body {
     font-family: 'Teko', sans-serif;
     max-width: 900px;
     margin: auto;
-    // back button
-    a{
-        text-decoration: none;
-        color: $secondarycolor;
+    div {
+        max-width: 90%;
+        margin: auto;
+        // back button
+        a{
+            text-decoration: none;
+            color: $secondarycolor;
 }
+    }
+
 
 //blog post
 article {
     max-width: 90%;
-    margin: auto;
     }
     h2 {
         font-size: 35px;
@@ -31,7 +35,7 @@ article {
     }
     img {
         text-align: center;
-        max-width:100%;
+        max-width: 100%;
     }
     .text {
         margin-top: 40px;
