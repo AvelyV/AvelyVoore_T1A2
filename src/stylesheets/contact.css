@@ -77,10 +77,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   height: 150px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
