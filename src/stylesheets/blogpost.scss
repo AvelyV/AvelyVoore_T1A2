@@ -7,13 +7,14 @@ body {
     background-color: $maincolor;
     color: $secondarycolor;
     font-family: 'Teko', sans-serif;
-    margin: 40px;
     max-width: 900px;
+    margin: auto;
 }
 
 //blogpost
 div {
     max-width: 90%;
+
     // back button
     a{
         text-decoration: none;
