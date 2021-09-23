@@ -19,7 +19,7 @@ The target audience is potential future clients or employers.
 
 I have chosen simple and clean design, which does not overwhelm the viewer. I have used accent colour and hover effects to engage and keep the audience interested. 
 
-![Sitemap](docs/sitemap1.png)
+![Sitemap](./docs/sitemap1.png)
 
 All pages on my website are interlinked, except for the blog posts, 
 which are only linked to "blog" page. 
